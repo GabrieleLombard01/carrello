@@ -23,14 +23,15 @@ function chiamaVeicoli (tipoVeicolo) {
                 if (element.tipo==tipoVeicolo) {
                     document.getElementById(tipoVeicolo).innerHTML+=dati;
                     let idElement =   element.tipo+element.id
-                    console.log(idElement)
-                    creaCard(idElement, element.nome, element.foto,element.descrizione,element.prezzo)
+                    let Originalid = element.id
+                    creaCard(idElement, element.nome, element.foto,element.descrizione,element.prezzo,Originalid)
                 }
                 
         });
-        function creaCard(id, nome, foto, descrizione,prezzo) {
+        function creaCard(id, nome, foto, descrizione,prezzo,Originalid) {
             console.log('Nome:', nome);
             console.log('Foto:', foto);
+            console.log('id', Originalid);
         
             var parentRow = document.getElementById('aggancio-carta-row');
         
@@ -45,10 +46,11 @@ function chiamaVeicoli (tipoVeicolo) {
                 <img src="${foto }" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${nome}</h5>
+                    <p class="card-text">Product Id=${Originalid  }</p>
                     <p class="card-text">${descrizione ||'quello che vuoi se manca descrizione' }</p>
                     <p class="card-text">$${prezzo}.00</p>
                     <input type="number" name="" id="${newCardDiv.id} ">
-
+                    <button type="button" class="mt-3">Inserisci quantità nel carrello</button>
                 </div>
             `;
         
