@@ -18,38 +18,59 @@ function chiamaVeicoli (tipoVeicolo) {
         let prova2 = Object.keys(dati).map((key) => [key, dati[key]]);
         let array = prova2[0][1]
 
+
         array.forEach(element => {
                 if (element.tipo==tipoVeicolo) {
                     document.getElementById(tipoVeicolo).innerHTML+=dati;
-                    let idElement = element.id + element.tipo
+                    let idElement =   element.tipo+element.id
                     console.log(idElement)
-                    creaCard(idElement, element.nome, element.foto)
+                    creaCard(idElement, element.nome, element.foto,element.descrizione,element.prezzo)
                 }
+                
         });
+        function creaCard(id, nome, foto, descrizione,prezzo) {
+            console.log('Nome:', nome);
+            console.log('Foto:', foto);
+        
+            var parentRow = document.getElementById('aggancio-carta-row');
+        
+            // Crea la carta 
+            var newCardDiv = document.createElement('div');
+            newCardDiv.id = id;  // id di ogni carta sommato
+            newCardDiv.className = 'card col-3 my-2 mx-2';
+            newCardDiv.style.width = '18rem';
+        
+            // internocarta
+            var cardHTML = `
+                <img src="${foto }" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${nome}</h5>
+                    <p class="card-text">${descrizione ||'quello che vuoi se manca descrizione' }</p>
+                    <p class="card-text">$${prezzo}.00</p>
+                    <input type="number" name="" id="${newCardDiv.id} ">
 
-        function creaCard (id, nome, foto) {
-            console.log(nome, foto)
+                </div>
+            `;
+        
+            newCardDiv.innerHTML = cardHTML;
+        
+            parentRow.appendChild(newCardDiv);
 
-            document.createElement()
-            document.getElementById('aggancio-carta').appendChild()
 
-            var childNumber = 3;
-
-            var parent = document.getElementById('aggancio-carta');
             
-            var newChild = '<div id="moto" class="card mb-2" style="width: 18rem;" id="'+id+'">';
-            parent.insertAdjacentHTML('beforeend', newChild);
-            childNumber++;
-
+          
         }
-
-        //console.log(prova2[0][1][0])
-
+        // elimina il primo risultato patcha il bug
+        
+        var elimina = document.getElementById(tipoVeicolo);
+            elimina.remove();
     })
     .catch(error => {
         console.error(error);
     })
+
 }
+
 
 
 let showPage = (path, bgcol) => {
