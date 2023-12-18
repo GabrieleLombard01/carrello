@@ -1,0 +1,74 @@
+{
+  "veicoli": [
+    {
+      "id": 1,
+      "tipo": "moto",
+      "nome": "Ducati Panigale V4",
+      "foto": "https://picsum.photos/id/1/200/300",
+      "descrizione": "La Ducati Panigale V4 è una superbike sportiva con un motore V4 ad alte prestazioni e un design aerodinamico."
+    },
+    {
+      "id": 2,
+      "tipo": "moto",
+      "nome": "Honda CBR1000RR",
+      "foto": "https://picsum.photos/id/2/200/300",
+      "descrizione": "La Honda CBR1000RR è una moto sportiva con un potente motore da 1000cc, progettata per offrire prestazioni eccezionali su strada e pista."
+    },
+    {
+      "id": 3,
+      "tipo": "moto",
+      "nome": "Harley-Davidson Fat Boy",
+      "foto": "https://picsum.photos/id/3/200/300",
+      "descrizione": "La Harley-Davidson Fat Boy è una cruiser iconica con un look robusto e un motore potente, ideale per chi cerca uno stile unico sulla strada."
+    },
+    {
+      "id": 4,
+      "tipo": "moto",
+      "nome": "BMW R1250GS",
+      "foto": "https://picsum.photos/id/4/200/300",
+      "descrizione": "La BMW R1250GS è una moto da enduro adatta a lunghe distanze, con un motore boxer e tecnologie avanzate per affrontare ogni tipo di terreno."
+    },
+    {
+      "id": 5,
+      "tipo": "auto",
+      "nome": "Tesla Model S",
+      "foto": "model_s.jpg",
+      "descrizione": "La Tesla Model S è un'auto elettrica di lusso con un'autonomia eccezionale e prestazioni di accelerazione sorprendenti."
+    },
+    {
+      "id": 6,
+      "tipo": "auto",
+      "nome": "Ford Mustang",
+      "foto": "mustang.jpg",
+      "descrizione": "La Ford Mustang è un'iconica muscle car con un design aggressivo e un motore potente, perfetta per gli amanti delle prestazioni."
+    },
+    {
+      "id": 7,
+      "tipo": "auto",
+      "nome": "BMW M3",
+      "foto": "m3.jpg",
+      "descrizione": "La BMW M3 è una berlina sportiva di fascia alta con prestazioni straordinarie e un design elegante."
+    },
+    {
+      "id": 8,
+      "tipo": "auto",
+      "nome": "Jeep Wrangler",
+      "foto": "wrangler.jpg",
+      "descrizione": "La Jeep Wrangler è un SUV fuoristrada robusto e versatile, ideale per esplorare terreni accidentati."
+    },
+    {
+      "id": 9,
+      "tipo": "jet",
+      "nome": "Jet velocissimo",
+      "foto": "wrangler.jpg",
+      "descrizione": "jet molto veloce, ma proprio tanto"
+    },
+    {
+      "id": 10,
+      "tipo": "dirigibili",
+      "nome": "Dirigibile veloce",
+      "foto": "wrangler.jpg",
+      "descrizione": "dirigibile molto veloce"
+    }
+  ]
+}
